@@ -19,7 +19,12 @@ const BlogList = () => {
     try {
       setLoading(true);
       const response = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&pageSize=${itemsPerPage}&page=${currentPage}&apiKey=${process.env.REACT_APP_API_KEY}`
+        `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&pageSize=${itemsPerPage}&page=${currentPage}`,
+        {
+          headers: {
+            "X-Api-Key": process.env.REACT_APP_API_KEY,
+          },
+        }
       );
       setPosts(response.data.articles);
       setTotalResults(response.data.totalResults);

@@ -23,6 +23,7 @@ const BlogList = () => {
         {
           headers: {
             "X-Api-Key": process.env.REACT_APP_API_KEY,
+            Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
           },
         }
       );

@@ -1,0 +1,21 @@
+.blog-post-container {
+    max-width: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 60px;
+  }
+  
+  .ant-card {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .ant-card-cover img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .ant-typography {
+    margin-bottom: 16px;
+  }
+  

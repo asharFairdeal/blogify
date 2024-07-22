@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #001529; /* Adjust as needed */
+    color: #fff;
+    padding: 0 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-button {
+    margin-right: 16px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 310px) {
+    .title {
+      display: none;
+    }
+  }

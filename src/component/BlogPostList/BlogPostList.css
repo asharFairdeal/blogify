@@ -1,0 +1,30 @@
+.blog-post-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .blog-post-card .ant-card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .blog-post-card .ant-card-meta {
+    flex-grow: 1;
+  }
+  
+  .blog-post-card .ant-card-meta-description {
+    flex-grow: 1;
+  }
+  
+  .blog-post-meta {
+    margin-top: 10px;
+  }
+  
+  .blog-post-meta .author,
+  .blog-post-meta .date {
+    font-size: 0.875rem;
+    color: #555;
+  }
